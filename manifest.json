@@ -1,10 +1,15 @@
 {
   "name": "PrintHAL",
-  "version": "0.0.0-pending-first-build",
+  "version": "1.0.0",
   "builds": [
     {
       "chipFamily": "ESP32-S3",
-      "parts": []
+      "parts": [
+        { "path": "bootloader.bin", "offset": 0 },
+        { "path": "partitions.bin", "offset": 32768 },
+        { "path": "boot_app0.bin", "offset": 57344 },
+        { "path": "firmware.bin", "offset": 65536 }
+      ]
     }
   ]
 }
