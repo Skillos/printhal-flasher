@@ -1,0 +1,10 @@
+{
+  "name": "PrintHAL",
+  "version": "0.0.0-pending-first-build",
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": []
+    }
+  ]
+}
