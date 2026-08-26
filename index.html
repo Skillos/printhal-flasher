@@ -11,6 +11,7 @@
   .sub{color:#666;margin-top:0}
   .box{border:1px solid #ddd;border-radius:10px;padding:20px;margin-top:24px;text-align:center}
   .warn{background:#fff8e1;border:1px solid #f0d98c;border-radius:8px;padding:12px 16px;margin-top:16px;font-size:14px}
+  .info{background:#eef5ff;border:1px solid #bcd6f7;border-radius:8px;padding:12px 16px;margin-top:16px;font-size:14px}
   esp-web-install-button button{padding:10px 18px;border-radius:8px;border:1px solid #2266dd;background:#2266dd;color:#fff;font-size:15px;cursor:pointer}
   footer{margin-top:32px;font-size:13px;color:#777}
   #version{color:#999}
@@ -36,6 +37,17 @@
     Only works in <b>Chrome or Edge on desktop</b> (Windows/Mac/Linux)
     &ndash; not on mobile, and not in Firefox or Safari (the Web Serial API
     isn't supported there).
+  </div>
+
+  <div class="info">
+    <b>Flashing here erases everything on the device</b>, including your
+    saved WiFi network and Home Assistant settings &ndash; you'll need to
+    set those up again afterwards. This only matters the <b>first</b> time
+    (or if you ever need to re-flash from scratch): once PrintHAL is
+    running, all <b>future</b> updates can be installed from the device's
+    own configuration page (<code>http://printhal.local</code>) using the
+    <b>&ldquo;Check for updates&rdquo;</b> / <b>&ldquo;Install now&rdquo;</b>
+    buttons there &ndash; that update path keeps all your settings intact.
   </div>
 
   <footer>PrintHAL &ndash; firmware is built automatically by GitHub Actions
