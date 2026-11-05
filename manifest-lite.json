@@ -1,0 +1,16 @@
+{
+  "name": "PrintHAL Lite (non-touch board)",
+  "version": "1.1.2",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "bootloader-lite.bin", "offset": 0 },
+        { "path": "partitions-lite.bin", "offset": 32768 },
+        { "path": "boot_app0-lite.bin", "offset": 57344 },
+        { "path": "firmware-lite.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
